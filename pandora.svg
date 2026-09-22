@@ -1,36 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
 <defs>
-  <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#f8a9d0"/>
-    <stop offset=".55" stop-color="#c784bd"/>
-    <stop offset="1" stop-color="#5f547f"/>
-  </linearGradient>
-  <linearGradient id="mount" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#725c91"/>
-    <stop offset="1" stop-color="#332d55"/>
-  </linearGradient>
+ <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f5a9d5"/><stop offset=".45" stop-color="#b88dcc"/><stop offset="1" stop-color="#5c5b91"/></linearGradient>
+ <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#584d79"/><stop offset="1" stop-color="#1f294b"/></linearGradient>
+ <linearGradient id="pinkmount" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9d72ae"/><stop offset="1" stop-color="#4a426f"/></linearGradient>
+ <radialGradient id="moon"><stop stop-color="#fff3fa"/><stop offset=".55" stop-color="#f0c8e9"/><stop offset="1" stop-color="#c785c8"/></radialGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
 </defs>
-<rect width="700" height="500" rx="35" fill="url(#sky)"/>
-<g fill="#fff0b4" opacity=".8">
-  <circle cx="80" cy="75" r="4"/><circle cx="145" cy="125" r="3"/><circle cx="575" cy="90" r="4"/><circle cx="630" cy="155" r="3"/><circle cx="480" cy="55" r="2"/>
+<rect width="1600" height="1000" fill="url(#sky)"/>
+<circle cx="1300" cy="220" r="170" fill="url(#moon)" opacity=".9"/>
+<g fill="#fff7df" opacity=".8">
+ <circle cx="120" cy="130" r="4"/><circle cx="250" cy="210" r="3"/><circle cx="430" cy="110" r="4"/><circle cx="580" cy="240" r="3"/><circle cx="820" cy="125" r="4"/><circle cx="1010" cy="200" r="3"/><circle cx="1460" cy="130" r="4"/><circle cx="1510" cy="310" r="3"/>
 </g>
-<g fill="url(#mount)">
-  <path d="M0 360 L95 220 L150 265 L205 145 L300 280 L355 190 L445 300 L520 170 L620 275 L700 210 V500 H0Z"/>
-  <path d="M80 380 L150 260 L190 305 L225 235 L275 320 L315 260 L370 335 L420 245 L485 325 L545 250 L625 335 L700 280 V500 H80Z" opacity=".85"/>
+<g fill="#8b67a2" opacity=".8">
+ <path d="M0 480L150 275 260 370 400 175 560 420 680 260 850 450 990 210 1160 430 1300 250 1450 430 1600 250V650H0Z"/>
 </g>
-<g fill="#8fd2b5" opacity=".5">
-  <path d="M145 400 C125 350 160 325 190 345 C205 365 200 390 220 420Z"/>
-  <path d="M515 420 C490 370 530 340 555 365 C570 385 560 405 580 435Z"/>
+<g fill="url(#pinkmount)">
+ <path d="M0 590L160 390 270 500 430 250 590 560 735 350 900 585 1050 315 1200 560 1350 360 1510 550 1600 430V1000H0Z"/>
+ <path d="M85 620L185 450 270 530 330 430 410 590 510 460 610 610 710 480 810 610 930 430 1040 610 1150 470 1260 620 1390 490 1500 620 1600 530V1000H85Z" opacity=".72"/>
 </g>
-<g fill="#f7d96a">
-  <circle cx="92" cy="410" r="7"/><circle cx="116" cy="438" r="5"/><circle cx="620" cy="405" r="7"/><circle cx="650" cy="440" r="5"/>
+<g fill="url(#ground)">
+ <path d="M0 690C180 620 270 730 430 670C610 600 720 740 890 670C1060 600 1200 740 1370 650C1480 590 1550 660 1600 640V1000H0Z"/>
 </g>
-<g fill="none" stroke="#f7b8e0" stroke-width="5" opacity=".65">
-  <path d="M50 165 C150 90 220 170 305 100"/>
-  <path d="M430 130 C500 70 585 135 665 80"/>
+<g fill="#6bd2c0" opacity=".55">
+ <path d="M160 850C110 760 180 710 245 755C285 795 260 860 310 915Z"/>
+ <path d="M1340 900C1290 805 1360 750 1425 800C1460 840 1435 890 1490 950Z"/>
+ <path d="M700 930C660 850 720 800 770 835C805 870 790 915 830 960Z"/>
 </g>
-<g fill="#eaa8d8" opacity=".9">
-  <path d="M270 160 q30 -35 60 0 q-30 45 -60 0Z"/>
-  <path d="M385 210 q25 -30 50 0 q-25 38 -50 0Z"/>
+<g fill="#f8ca54">
+ <circle cx="95" cy="870" r="18"/><circle cx="145" cy="910" r="11"/><circle cx="1520" cy="850" r="17"/><circle cx="1470" cy="910" r="10"/><circle cx="330" cy="960" r="12"/><circle cx="1230" cy="950" r="13"/>
+</g>
+<g fill="none" stroke="#ffd7f2" stroke-width="6" opacity=".45">
+ <path d="M40 310C250 180 380 300 540 170"/><path d="M980 300C1170 160 1330 290 1540 140"/>
+</g>
+<g fill="#f4a9d9" opacity=".9">
+ <path d="M650 300q55-70 110 0q-55 85-110 0Z"/><path d="M780 390q45-58 90 0q-45 70-90 0Z"/><path d="M1080 360q42-55 84 0q-42 66-84 0Z"/>
+</g>
+<g fill="#dff7e6" opacity=".8">
+ <circle cx="610" cy="810" r="8"/><circle cx="630" cy="790" r="5"/><circle cx="650" cy="815" r="7"/><circle cx="1040" cy="760" r="8"/><circle cx="1060" cy="740" r="5"/><circle cx="1080" cy="765" r="7"/>
+</g>
+<!-- flying creature stickers -->
+<g fill="#f3a7d5" stroke="#fff" stroke-width="5" opacity=".95">
+ <path d="M300 310q-70-70-125-10q65 10 110 55q45-45 110-55q-45-60-95 10Z"/>
+ <path d="M1370 430q-65-60-115-10q55 10 95 50q45-40 100-50q-45-55-80 10Z"/>
+</g>
+<!-- glowing flora -->
+<g stroke="#68d5cf" stroke-width="9" opacity=".7">
+ <path d="M520 880q-20-100 15-170"/><path d="M560 900q-10-100 50-175"/><path d="M1090 900q-15-120-60-180"/><path d="M1130 900q-5-100 55-160"/>
 </g>
 </svg>
