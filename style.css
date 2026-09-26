@@ -122,3 +122,18 @@ button{font:inherit}
 .opening .scene-overlay{z-index:-2}
 .letter-section .pandora-letter-scene{z-index:-3;opacity:.98}
 .letter-section{background:linear-gradient(rgba(246,180,219,.12),rgba(246,180,219,.18))}
+
+
+/* Fondos reales proporcionados por el usuario */
+.opening{background:none !important;}
+.opening-background,.letter-background{
+  position:absolute;inset:0;z-index:0;
+  background-position:center center;background-size:cover;background-repeat:no-repeat;
+}
+.opening-background{background-image:url("https://i.postimg.cc/pdBLzXCj/L9KBP.jpg") !important;}
+.letter-background{background-image:url("https://i.postimg.cc/BQ68cDP2/1d-Ba2.jpg") !important;}
+.opening .scene-overlay{z-index:1;}
+.opening-top,.opening-card{z-index:3;}
+.letter-section{background:none !important;}
+.letter-section .background-glow{z-index:1;}
+.letter-section .top-nav,.letter-section .letter{z-index:4;}
