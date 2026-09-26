@@ -137,3 +137,21 @@ button{font:inherit}
 .letter-section{background:none !important;}
 .letter-section .background-glow{z-index:1;}
 .letter-section .top-nav,.letter-section .letter{z-index:4;}
+
+/* Imagen proporcionada para la sección de la carta */
+.letter-section{background:none !important;}
+.letter-background-image{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center center;
+  z-index:0;
+}
+.letter-section::before{z-index:1 !important;}
+.letter-section::after{z-index:2 !important;}
+.letter-section .background-glow{z-index:3 !important;}
+.letter-section .top-nav,
+.letter-section .letter{z-index:4 !important;}
